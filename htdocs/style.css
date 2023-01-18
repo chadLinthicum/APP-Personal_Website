@@ -1,60 +1,65 @@
-body { /*all with style linked will have this background color*/
-  background-color:lightgrey;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 
-div {
+.container {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.name {
   text-align: center;
+  color: white;
+  padding-top: 40px;
 }
 
-h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+span {
+  color: #01737b;
 }
 
-li {
-  float: left;
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
 }
 
-li a {
-  display:block;
-  color:white;
-  text-align: center;
-  padding:14px 16px;
-  text-decoration: none;  
+nav ul li a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-li a:hover{
-  background-color:white;
-  color: black;
+nav ul li a:hover {
+  color: #01737b;
+  transition: 0.3s;
 }
 
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-ul {
-  list-style-type:none; /*removes bullets*/
-  margin:0;
-  padding:0;
-  overflow:auto;
-  background-color: rgb(77, 72, 72);
-}
-
-.active {
-  background-color:coral;
-}
-
-.active:hover {
-  background-color:coral;
-  color:white;
-}
-
-.profilePic {
-  width: 175px;px;
-  height: 175px;px;
-  border-radius: 50%;
-}
-
-#hiddenH1 {
-  color:white;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#myFace {
+  width: 256px;
+  height: 256px;
+  border-radius: 15%;
+  border: 5px solid transparent;
+  border-color: white;
 }

@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chad Linthicum's Website</title>
     <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <br />
-    <br />
-
-    <div>
-      <a href="hiddenPage.html">
-        <img
-          class="profilePic"
-          src="assets/me.jpeg"
-          onmouseover="this.src='assets/meAlt.jpeg'"
-          onmouseout="this.src='assets/me.jpeg'"
-        />
-      </a>
-      <a class="profilePic" href="#"></a>
-      <h1>About me</h1>
-      <p>My name is Chad Linthicum.</p>
-      <p>I am a web, app, and game developer and musician.</p>
-      <br />
-      <p>Hope you'll check out some of my songs and games</p>
-      <p>and let me know what you think! 🤘👍🙏</p>
-      <a href="http://swampdonkey.epizy.com" target="_blank">Swamp Donkey</a>
-      <br />
-      <a href="http://littleflame.epizy.com" target="_blank">Little Flame</a>
+    <h1 class="name">Chad <span>Linthicum</span></h1>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Other</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>
+        My name is Chad Linthicum. I am a web, app, and game developer and
+        musician.
+      </p>
+      <p>
+        Hope you'll check out some of my songs and games and let me know what
+        you think! 🤘👍🙏
+      </p>
+      <img src="assets/me.jpg" alt="myFace" id="myFace" />
     </div>
   </body>
 </html>
