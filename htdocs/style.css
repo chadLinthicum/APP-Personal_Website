@@ -1,4 +1,4 @@
-* {
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,8 +7,10 @@
   color: white;
 }
 
-.container {
-  width: 100%;
+a {
+  text-decoration: none;
+  color: #01737b;
+  font-weight: bold;
 }
 
 nav {
@@ -18,12 +20,6 @@ nav {
   padding-top: 5px;
   padding-left: 10%;
   padding-right: 10%;
-}
-
-.name {
-  text-align: center;
-  color: white;
-  padding-top: 40px;
 }
 
 span {
@@ -47,19 +43,65 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-.about-container {
+.About_Container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 5px;
-  padding-left: 10%;
-  padding-right: 10%;
+  justify-content: space-evenly;
 }
 
-#myFace {
-  width: 256px;
-  height: 256px;
+.Container {
+  width: 100%;
+}
+
+.Name {
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+
+.Popout_Hide {
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99999;
+  width: 30vw;
+  height: 100vh;
+  transform: translate(-30vw);
+  transition-duration: 250ms;
+}
+
+.Popout_Show {
+  top: 0;
+  position: absolute;
+  z-index: 99999;
+  background-color: rgba(211, 211, 211, 0.95);
+  width: 80vw;
+  height: 100vh;
+  transition-duration: 250ms;
+}
+
+@media (width >= 1080px) {
+  #hamburger {
+    display: none !important;
+  }
+}
+
+@media (width <= 1080px) {
+  #hamburger {
+    float: right;
+    width: 45px;
+  }
+}
+
+#my_face {
+  width: 10rem;
+  height: 10rem;
   border-radius: 15%;
   border: 5px solid transparent;
   border-color: white;
+}
+
+#popout ul {
+  list-style-type: none;
+  font-size: 3rem;
 }
