@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid green;
+} */
+
 body {
   padding: 0;
   margin: 0;
@@ -13,34 +17,8 @@ a {
   font-weight: bold;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 5px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 span {
   color: #01737b;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-nav ul li a {
-  color: rgb(179, 179, 179);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #01737b;
-  transition: 0.3s;
 }
 
 .About_Container {
@@ -59,40 +37,6 @@ nav ul li a:hover {
   padding-top: 40px;
 }
 
-.Popout_Hide {
-  top: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: 99999;
-  width: 30vw;
-  height: 100vh;
-  transform: translate(-30vw);
-  transition-duration: 250ms;
-}
-
-.Popout_Show {
-  top: 0;
-  position: absolute;
-  z-index: 99999;
-  background-color: rgba(211, 211, 211, 0.95);
-  width: 80vw;
-  height: 100vh;
-  transition-duration: 250ms;
-}
-
-@media (width >= 1080px) {
-  #hamburger {
-    display: none !important;
-  }
-}
-
-@media (width <= 1080px) {
-  #hamburger {
-    float: right;
-    width: 45px;
-  }
-}
-
 #my_face {
   width: 10rem;
   height: 10rem;
@@ -101,7 +45,57 @@ nav ul li a:hover {
   border-color: white;
 }
 
-#popout ul {
-  list-style-type: none;
-  font-size: 3rem;
+/* DESKTOP */
+@media only screen and (min-width: 600px) {
+  #hamburger {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  #hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+  }
+  nav ul {
+    display: inline;
+    text-align: center;
+    list-style-type: none;
+    font-size: 3rem;
+  }
+  .Popout_Hide {
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99999;
+    width: 30vw;
+    height: 100vh;
+    transform: translate(-30vw);
+    transition-duration: 350ms;
+  }
+
+  .Popout_Hide a {
+    display: none;
+  }
+
+  .Popout_Show {
+    top: 0;
+    position: absolute;
+    z-index: 99999;
+    background-color: rgba(211, 211, 211, 0.95);
+    width: 80vw;
+    height: 100vh;
+    transition-duration: 350ms;
+  }
 }
