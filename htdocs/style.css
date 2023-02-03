@@ -25,12 +25,6 @@ span {
   color: var(--main-bg-color);
 }
 
-.About_Container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 .Container {
   width: 100%;
 }
@@ -54,6 +48,11 @@ span {
     padding: 0;
     font-size: 2vw;
   }
+  .Home_Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   .Name {
     text-align: center;
     color: white;
@@ -72,6 +71,15 @@ span {
     text-align: center;
     list-style-type: none;
     font-size: 3rem;
+  }
+  p {
+    text-align: center;
+  }
+  .Home_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
   .Name {
     padding-left: 15px;
