@@ -17,6 +17,7 @@ body {
   background-image: url("assets/background2.jpg");
   background-size: cover;
   color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -29,7 +30,16 @@ span {
   color: var(--main-bg-color);
 }
 
-#my_face {
+#Header {
+  width: 100%;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+#My_Face {
   width: 10rem;
   height: 10rem;
   border-radius: 15%;
@@ -48,35 +58,29 @@ span {
     padding: 0;
     font-size: 2vw;
   }
-  .Home_Container,
-  .Contact_Container,
-  .Games_Container,
-  .Music_Container,
-  .Other_Container {
+  #Home_Container,
+  #Contact_Container,
+  #Games_Container,
+  #Music_Container,
+  #Other_Container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  #my_name {
+  #My_Name {
     text-align: center;
     color: white;
     padding-top: 20px;
     font-size: 3vw;
   }
-  #hamburger {
+  #Hamburger {
     display: none;
   }
 }
 
 /* MOBILE */
 @media only screen and (max-width: 720px) {
-  .Nav_Container {
-    position: fixed;
-    width: 100vw;
-    background-color: black;
-  }
-
   nav ul {
     display: inline;
     text-align: center;
@@ -86,21 +90,8 @@ span {
   p {
     text-align: center;
   }
-  .Home_Container,
-  .Contact_Container,
-  .Games_Container,
-  .Music_Container,
-  .Other_Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 75px;
-  }
-  #my_name {
-    padding-left: 15px;
-  }
-  .Popout_Hide {
+
+  .popout_hide {
     top: 0;
     overflow: hidden;
     position: absolute;
@@ -110,22 +101,41 @@ span {
     transform: translate(-30vw);
     transition-duration: 350ms;
   }
-  .Popout_Hide a {
+  .popout_hide a {
     display: none;
   }
-  .Popout_Show {
+  .popout_show {
     top: 0;
     position: absolute;
-
     background-color: rgba(211, 211, 211, 0.95);
     width: 80vw;
     height: 100vh;
     transition-duration: 350ms;
   }
-  #hamburger {
+  #Hamburger {
     position: absolute;
     top: 15px;
     right: 15px;
     width: 40px;
+  }
+
+  #Home_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #Contact_Container,
+  #Games_Container,
+  #Music_Container,
+  #Other_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #My_Name {
+    padding-left: 15px;
   }
 }
