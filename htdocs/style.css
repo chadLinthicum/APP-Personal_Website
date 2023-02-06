@@ -29,10 +29,6 @@ span {
   color: var(--main-bg-color);
 }
 
-.Container {
-  width: 100%;
-}
-
 #my_face {
   width: 10rem;
   height: 10rem;
@@ -56,8 +52,9 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-  .Name {
+  #my_name {
     text-align: center;
     color: white;
     padding-top: 20px;
@@ -70,6 +67,12 @@ span {
 
 /* MOBILE */
 @media only screen and (max-width: 720px) {
+  .Nav_Container {
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+  }
+
   nav ul {
     display: inline;
     text-align: center;
@@ -84,15 +87,16 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding-top: 75px;
   }
-  .Name {
+  #my_name {
     padding-left: 15px;
   }
   .Popout_Hide {
     top: 0;
     overflow: hidden;
     position: absolute;
-    z-index: 99999;
+
     width: 30vw;
     height: 100vh;
     transform: translate(-30vw);
@@ -104,7 +108,7 @@ span {
   .Popout_Show {
     top: 0;
     position: absolute;
-    z-index: 99999;
+
     background-color: rgba(211, 211, 211, 0.95);
     width: 80vw;
     height: 100vh;
