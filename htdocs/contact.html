@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,24 +14,26 @@
   </head>
 
   <body>
-    <div class="Nav_Container">
-      <input id="hamburger" type="image" src="assets/eggShake.gif" />
-      <h1 id="my_name">Chad <span>Linthicum</span></h1>
-      <nav id="nav" class="Popout_Hide">
+    <header id="Header">
+      <input id="Hamburger" type="image" src="assets/eggShake.gif" />
+      <h1 id="My_Name">Chad <span>Linthicum</span></h1>
+      <nav id="Nav" class="popout-hide">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="music.html">Music</a></li>
-          <li><a href="other.html">Other</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html#Home_Container" class="nav-link">Home</a></li>
+          <li>
+            <a href="index.html#Games_Container" class="nav-link">Games</a>
+          </li>
+          <li>
+            <a href="index.html#Music_Container" class="nav-link">Music</a>
+          </li>
+          <li>
+            <a href="index.html#Other_Container" class="nav-link">Other</a>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <main class="Contact_Container">
-      <div>
-        <p>Contact</p>
-      </div>
-    </main>
+    </header>
+    <div id="Main"></div>
     <script src="script.js"></script>
   </body>
 </html>

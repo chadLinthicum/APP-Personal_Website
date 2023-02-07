@@ -38,6 +38,7 @@ function setMainContentMarginTop() {
   mainMarginTopPx.style.marginTop = headerHeight + "px";
 }
 
+//Adds a top to anchor jumps
 $(".nav-link").click(function () {
   var divId = $(this).attr("href");
   $("html, body").animate({
