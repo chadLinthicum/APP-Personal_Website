@@ -6,10 +6,11 @@ window.onresize = setMainContentMarginTop;
 
 let hamburger = document.getElementById("Hamburger");
 let nav = document.getElementById("Nav");
+let headerHeight = document.getElementById("Header").offsetHeight;
 
 function toggleNav() {
-  nav.classList.toggle("popout_hide");
-  nav.classList.toggle("popout_show");
+  nav.classList.toggle("popout-hide");
+  nav.classList.toggle("popout-show");
   if (hamburger.src.includes("eggShake.gif")) {
     hamburger.src = "assets/eggHatch.gif";
   } else {
@@ -36,3 +37,10 @@ function setMainContentMarginTop() {
   let mainMarginTopPx = document.getElementById("Main");
   mainMarginTopPx.style.marginTop = headerHeight + "px";
 }
+
+$(".nav-link").click(function () {
+  var divId = $(this).attr("href");
+  $("html, body").animate({
+    scrollTop: $(divId).offset().top - headerHeight,
+  });
+});

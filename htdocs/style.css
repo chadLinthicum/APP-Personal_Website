@@ -91,7 +91,7 @@ span {
     text-align: center;
   }
 
-  .popout_hide {
+  .popout-hide {
     top: 0;
     overflow: hidden;
     position: absolute;
@@ -101,10 +101,10 @@ span {
     transform: translate(-30vw);
     transition-duration: 350ms;
   }
-  .popout_hide a {
+  .popout-hide a {
     display: none;
   }
-  .popout_show {
+  .popout-show {
     top: 0;
     position: absolute;
     background-color: rgba(211, 211, 211, 0.95);
