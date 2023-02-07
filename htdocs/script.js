@@ -6,7 +6,7 @@ window.onresize = setMainContentMarginTop;
 
 let hamburger = document.getElementById("Hamburger");
 let nav = document.getElementById("Nav");
-let headerHeight = document.getElementById("Header").offsetHeight;
+// let headerHeight = document.getElementById("Header").offsetHeight;
 
 function toggleNav() {
   nav.classList.toggle("popout-hide");
@@ -40,6 +40,7 @@ function setMainContentMarginTop() {
 
 //Adds a top to anchor jumps
 $(".nav-link").click(function () {
+  let headerHeight = document.getElementById("Header").offsetHeight;
   var divId = $(this).attr("href");
   $("html, body").animate({
     scrollTop: $(divId).offset().top - headerHeight,
