@@ -47,18 +47,18 @@ $(".nav-link").click(function () {
   });
 });
 
-function talkTest() {
-  if ('speechSynthesis' in window) {
-    // Speech Synthesis supported 🎉
-    console.log("talk test ok");
-    var msg = new SpeechSynthesisUtterance();
-    msg.text = "Good Morning";
-    window.speechSynthesis.speak(msg);
-  } else {
-    // Speech Synthesis Not Supported 😣
-    alert("Sorry, your browser doesn't support text to speech!");
-  }
+// function talkTest() {
+//   if ('speechSynthesis' in window) {
+//     // Speech Synthesis supported 🎉
+//     console.log("talk test ok");
+//     var msg = new SpeechSynthesisUtterance();
+//     msg.text = "Good Morning";
+//     window.speechSynthesis.speak(msg);
+//   } else {
+//     // Speech Synthesis Not Supported 😣
+//     alert("Sorry, your browser doesn't support text to speech!");
+//   }
 
-}
+// }
 
-talkTest();
+// talkTest();

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <template id="card-template">
+        <style>
+            .card {
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px lightgray;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                margin: 50px;
+                max-width: 200px;
+            }
+
+            .card-header {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            ::slotted(img) {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+        <div class="card">
+            <div class="card-header">
+                <slot name="header"></slot>
+                <slot name="image"></slot>
+            </div>
+            <slot></slot>
+        </div>
+    </template>
+
+    <card-component>
+        <span slot="header">Solo</span>
+        <img slot="image" src="assets/me.jpg" alt="My_Face" />
+    </card-component>
+
+    <card-component>
+        <span slot="header">Games</span>
+        <img slot="image" src="assets/gameBuilding.jpg" alt="My_Face" />
+    </card-component>
+
+    <script>
+        class CardComponent extends HTMLElement {
+            constructor() {
+                super();
+                const shadowRoot = this.attachShadow({ mode: 'open' });
+                const template = document.querySelector('#card-template');
+                shadowRoot.appendChild(template.content.cloneNode(true));
+            }
+        }
+        customElements.define('card-component', CardComponent);
+    </script>
+</body>
+
+</html>
