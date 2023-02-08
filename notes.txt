@@ -1,0 +1,17 @@
+Layout: 
+    Projects: 
+        Web Apps (4?)
+            Link to more
+    Games:
+        Web
+        Unity
+        NES
+    Music
+        Singer/Songwriter
+        Bands
+        Chiptune
+    Other
+        Hobbie Builds
+        Artwork
+        Memes
+        
