@@ -51,12 +51,17 @@ nav ul {
 
 p {
   text-align: center;
+  font-size: 1.15rem;
   max-width: 75vw;
 }
 
 #Games_Container,
 #Other_Container {
   background-color: rgba(171, 194, 112, 0.15);
+}
+
+#Games_List {
+  text-align: center;
 }
 
 #Header {
@@ -144,7 +149,7 @@ p {
     color: #373737;
   }
   nav {
-    padding: 5vh;
+    padding-top: 5vh;
   }
 
   nav ul {
@@ -154,11 +159,12 @@ p {
   }
   .popout-hide {
     top: 0;
-
+    right: 0;
     position: absolute;
     width: 30vw;
     height: 100vh;
-    transform: translate(-30vw);
+    background-color: rgba(211, 211, 211, 0.965);
+    transform: translate(100vw);
     transition-duration: 350ms;
   }
   .popout-hide a {
@@ -166,6 +172,7 @@ p {
   }
   .popout-show {
     top: 0;
+    right: 0;
     position: absolute;
     background-color: rgba(211, 211, 211, 0.965);
     width: 80vw;
@@ -175,7 +182,7 @@ p {
   #Hamburger {
     position: absolute;
     top: 15px;
-    right: 15px;
+    left: 3%;
     width: 40px;
   }
   #Home_Container {
@@ -196,6 +203,7 @@ p {
     flex-wrap: wrap;
   }
   #My_Name {
-    padding-left: 15px;
+    float: right;
+    padding-right: 5%;
   }
 }
