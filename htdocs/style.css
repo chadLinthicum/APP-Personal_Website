@@ -10,6 +10,10 @@
   --main-bg-color: #abc270;
 }
 
+address {
+  margin: auto;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -21,7 +25,6 @@ body {
   background-color: rgba(55, 55, 55, 1);
   background-size: cover;
   color: white;
-  overflow-x: hidden;
 }
 
 a {
@@ -63,6 +66,18 @@ p {
   left: 0;
   background-color: black;
   box-shadow: 1px 1px;
+}
+
+#Home_Container,
+#Contact_Container,
+#Games_Container,
+#Music_Container,
+#Other_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
 }
 
 #Main {
@@ -107,12 +122,7 @@ p {
   #Games_Container,
   #Music_Container,
   #Other_Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    height: 400px;
   }
   #My_Name {
     text-align: center;
@@ -140,7 +150,7 @@ p {
   }
   .popout-hide {
     top: 0;
-    overflow: hidden;
+
     position: absolute;
     width: 30vw;
     height: 100vh;
@@ -179,7 +189,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 400px;
+    min-height: 400px;
+    flex-wrap: wrap;
   }
   #My_Name {
     padding-left: 15px;
