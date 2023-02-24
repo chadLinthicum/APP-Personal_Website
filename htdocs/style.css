@@ -68,16 +68,20 @@ p {
   box-shadow: 1px 1px;
 }
 
+#Home_Container {
+  padding-top: 15px;
+}
+
 #Home_Container,
-#Contact_Container,
 #Games_Container,
 #Music_Container,
-#Other_Container {
+#Other_Container,
+#Contact_Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 400px;
+  min-height: 400px;
 }
 
 #Main {
@@ -118,10 +122,10 @@ p {
     /* padding: 0 1.5%; */
   }
   #Home_Container,
-  #Contact_Container,
   #Games_Container,
   #Music_Container,
-  #Other_Container {
+  #Other_Container,
+  #Contact_Container {
     flex-wrap: wrap;
   }
   #My_Name {
@@ -181,15 +185,14 @@ p {
     justify-content: space-evenly;
   }
   #Home_Container,
-  #Contact_Container,
   #Games_Container,
   #Music_Container,
-  #Other_Container {
+  #Other_Container,
+  #Contact_Container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 400px;
     flex-wrap: wrap;
   }
   #My_Name {
