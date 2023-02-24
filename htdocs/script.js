@@ -6,15 +6,14 @@ window.onresize = setMainContentMarginTop;
 
 let hamburger = document.getElementById("Hamburger");
 let nav = document.getElementById("Nav");
-// let headerHeight = document.getElementById("Header").offsetHeight;
 
 function toggleNav() {
   nav.classList.toggle("popout-hide");
   nav.classList.toggle("popout-show");
-  if (hamburger.src.includes("eggShake.gif")) {
+  if (hamburger.src.includes("egg-u2.png")) {
     hamburger.src = "assets/eggHatch.gif";
   } else {
-    hamburger.src = "assets/eggShake.gif";
+    hamburger.src = "assets/egg-u2.png";
   }
 }
 
@@ -36,6 +35,7 @@ function setMainContentMarginTop() {
   let headerHeight = document.getElementById("Header").offsetHeight;
   let mainMarginTopPx = document.getElementById("Main");
   mainMarginTopPx.style.marginTop = headerHeight + "px";
+  console.log(headerHeight)
 }
 
 //Adds a top to anchor jumps
@@ -46,19 +46,3 @@ $(".nav-link").click(function () {
     scrollTop: $(divId).offset().top - headerHeight,
   });
 });
-
-// function talkTest() {
-//   if ('speechSynthesis' in window) {
-//     // Speech Synthesis supported 🎉
-//     console.log("talk test ok");
-//     var msg = new SpeechSynthesisUtterance();
-//     msg.text = "Good Morning";
-//     window.speechSynthesis.speak(msg);
-//   } else {
-//     // Speech Synthesis Not Supported 😣
-//     alert("Sorry, your browser doesn't support text to speech!");
-//   }
-
-// }
-
-// talkTest();

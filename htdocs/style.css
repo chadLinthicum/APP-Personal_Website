@@ -26,17 +26,31 @@ a {
   font-weight: bold;
 }
 
-span {
-  color: var(--main-bg-color);
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  height: 50px;
+  display: flex;
 }
 
 #Header {
   width: 100%;
   position: fixed;
-
   top: 0;
   left: 0;
   background-color: black;
+}
+
+#Main {
+  margin-bottom: 50px;
+}
+
+#Marquee {
+  animation: marquee 15s linear infinite;
 }
 
 #My_Face {
@@ -47,16 +61,24 @@ span {
   border-color: white;
 }
 
+#Last_Name {
+  color: var(--main-bg-color);
+}
+
+#lilFlame_GIF {
+  width: 50px;
+}
+
 /* DESKTOP */
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 721px) {
   nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     margin-left: 25%;
     margin-right: 25%;
     padding: 0;
-    font-size: 2vw;
+    font-size: 1.5em;
   }
   #Home_Container,
   #Contact_Container,
@@ -72,7 +94,7 @@ span {
     text-align: center;
     color: white;
     padding-top: 20px;
-    font-size: 3vw;
+    font-size: 2rem;
   }
   #Hamburger {
     display: none;
@@ -95,7 +117,6 @@ span {
     top: 0;
     overflow: hidden;
     position: absolute;
-
     width: 30vw;
     height: 100vh;
     transform: translate(-30vw);
