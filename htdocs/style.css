@@ -55,6 +55,13 @@ p {
   max-width: 75vw;
 }
 
+.games {
+  width: 12rem;
+  height: 12rem;
+
+  margin: 0.5rem;
+}
+
 #Games_Container,
 #Other_Container {
   background-color: rgba(171, 194, 112, 0.15);
@@ -118,7 +125,7 @@ p {
   color: var(--main-bg-color);
 }
 
-#lilFlame_GIF {
+#LilFlame_GIF {
   width: 50px;
 }
 
@@ -174,7 +181,7 @@ p {
     height: 100vh;
     background-color: rgba(211, 211, 211, 0.965);
     transform: translate(50vw);
-    transition-duration: 700ms;
+    transition-duration: 550ms;
   }
   .popout-hide a {
     display: none;
@@ -186,7 +193,7 @@ p {
     background-color: rgba(211, 211, 211, 0.965);
     width: 80vw;
     height: 100vh;
-    transition-duration: 700ms;
+    transition-duration: 550ms;
   }
   #Hamburger {
     position: absolute;
