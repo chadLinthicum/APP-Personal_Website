@@ -170,11 +170,11 @@ p {
     top: 0;
     right: 0;
     position: absolute;
-    width: 30vw;
+    width: 0;
     height: 100vh;
     background-color: rgba(211, 211, 211, 0.965);
     transform: translate(50vw);
-    transition-duration: 500ms;
+    transition-duration: 700ms;
   }
   .popout-hide a {
     display: none;
@@ -186,7 +186,7 @@ p {
     background-color: rgba(211, 211, 211, 0.965);
     width: 80vw;
     height: 100vh;
-    transition-duration: 500ms;
+    transition-duration: 700ms;
   }
   #Hamburger {
     position: absolute;
