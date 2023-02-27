@@ -1,17 +1,21 @@
 Layout: 
     Projects: 
-        Web Apps (4?)
-            Link to more
+        Web Apps (Pokedex, Grill Cheese Channel, Lunar Clock, React Native Ninja Turtles)
+        Link to more
     Games:
-        Web
-        Unity
-        NES
+        Unity (Jumpin Jane, Pizza Feed)
+        Web (Worm VS Fly, Battleship)
+        NES (Swamp Donkey, Little Flame)
     Music
-        Singer/Songwriter
-        Bands
-        Chiptune
+        Solo (TBD)
+            Chiptunes
+        Bands (From Nowhere, APP)
+        Jam Band (Consumate V, Gold Top?)
     Other
-        Hobbie Builds
-        Artwork
-        Memes
-        
+        Artwork (Pixel Art, Stop Animation)
+        Hobbie Builds (Linthicade, N64 Lamp)
+        Video Editing (Capstone, Peyton's Bday, Spray Foam)
+        Memes (Pickleback, Mom's Cookin)
+        Featured (Guest on YouTube vids)
+    Blog
+
