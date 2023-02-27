@@ -10,10 +10,10 @@ let nav = document.getElementById("Nav");
 function toggleNav() {
   nav.classList.toggle("popout-hide");
   nav.classList.toggle("popout-show");
-  if (hamburger.src.includes("egg-u2.png")) {
+  if (hamburger.src.includes("eggNoHatch.webp")) {
     hamburger.src = "assets/eggHatch.gif";
   } else {
-    hamburger.src = "assets/egg-u2.png";
+    hamburger.src = "assets/eggNoHatch.webp";
   }
 }
 
@@ -35,7 +35,7 @@ function setMainContentMarginTop() {
   let headerHeight = document.getElementById("Header").offsetHeight;
   let mainMarginTopPx = document.getElementById("Main");
   mainMarginTopPx.style.marginTop = headerHeight + "px";
-  console.log(headerHeight)
+  // console.log(headerHeight)
 }
 
 //Adds a top to anchor jumps

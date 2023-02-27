@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chad Linthicum's Website</title>
-    <link href="style.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Most of the cool stuff about Chad Linthicum."
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/desktop.css" rel="stylesheet" media="(min-width: 721px)" />
+    <link href="css/mobile.css" rel="stylesheet" media="(max-width: 720px)" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
@@ -15,7 +27,7 @@
 
   <body>
     <header id="Header">
-      <input id="Hamburger" type="image" src="assets/egg-u2.png" />
+      <input id="Hamburger" type="image" src="assets/eggNoHatch.webp" alt="=" />
       <h1 id="My_Name">Chad <span id="Last_Name">Linthicum</span></h1>
       <nav id="Nav" class="popout-hide">
         <ul>
@@ -29,7 +41,7 @@
     </header>
     <div id="Main">
       <section id="Home_Container">
-        <div><img id="My_Face" src="assets/me.jpg" alt="My_Face" /></div>
+        <div><img id="My_Face" src="assets/me.webp" alt="My_Face" /></div>
         <div>
           <p>Hi, I'm Chad Linthicum!!</p>
           <p>I am a web, app, and game developer as well as a musician.</p>
@@ -43,21 +55,21 @@
       <section id="Games_Container">
         <h2>Games</h2>
         <div id="Games_List">
-          <h4>NES</h4>
+          <h3>NES</h3>
           <a href="swamp_donkey/SD_index.html"
-            ><img class="games" src="assets/SD_Cart.png" alt="SD"
+            ><img class="games" src="assets/SD_Cart.webp" alt="SD"
           /></a>
           <a href="little_flame/LF_index.html"
-            ><img class="games" src="assets/LF_Cart.png" alt="LF"
+            ><img class="games" src="assets/LF_Cart.webp" alt="LF"
           /></a>
-          <h4>Unity</h4>
-          <h4>Web</h4>
+          <h3>Unity</h3>
+          <h3>Web</h3>
         </div>
       </section>
       <section id="Music_Container">
         <h2>Music</h2>
         <div>
-          <img id="My_Face" src="assets/OSC.jpg" alt="My_Face" />
+          <img id="My_Face" src="assets/OSC.webp" alt="Music" />
         </div>
         <div>
           <p>Check out some of my tunes!</p>
@@ -66,7 +78,7 @@
       <section id="Other_Container">
         <h2>Other</h2>
         <div>
-          <img id="My_Face" src="assets/other.png" alt="My_Face" />
+          <img id="My_Face" src="assets/other.webp" alt="Other" />
         </div>
         <div>
           <p>Check out some of my other projects!</p>
@@ -75,11 +87,6 @@
       <section id="Other_Container"></section>
       <section id="Other_Container"></section>
     </div>
-    <footer>
-      <marquee direction="right"
-        ><img src="assets/lilFlame.gif" id="LilFlame_GIF"
-      /></marquee>
-    </footer>
-    <script src="script.js"></script>
+    <footer></footer>
   </body>
 </html>

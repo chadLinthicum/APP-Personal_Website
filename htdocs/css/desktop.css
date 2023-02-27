@@ -1,0 +1,26 @@
+a {
+  color: var(--main-bg-color);
+}
+nav ul {
+  font-size: 1.5em;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  /* padding: 0 1.5%; */
+}
+#Home_Container,
+#Games_Container,
+#Music_Container,
+#Other_Container,
+#Contact_Container {
+  flex-wrap: wrap;
+}
+#My_Name {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+#Hamburger {
+  display: none;
+}
