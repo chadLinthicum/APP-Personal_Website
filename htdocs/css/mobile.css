@@ -4,7 +4,6 @@ a {
 nav {
   padding-top: 5vh;
 }
-
 nav ul {
   display: inline;
   list-style-type: none;
@@ -44,7 +43,6 @@ nav ul {
   align-items: center;
   justify-content: space-evenly;
 }
-
 #My_Name {
   float: right;
   padding-right: 5%;

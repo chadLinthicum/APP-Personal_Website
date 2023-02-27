@@ -1,91 +1,78 @@
-/* * {
-  border: 1px solid green;
-} */
-
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: JosefinSans;
+  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
+  font-display: swap;
 }
-
 :root {
   --main-bg-color: #abc270;
 }
-
+* {
+  box-sizing: border-box;
+}
 address {
   margin: auto;
 }
-
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: JosefinSans;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: rgba(55, 55, 55, 1);
   background-size: cover;
-  color: white;
+  color: #fff;
 }
-
 a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0 1rem;
 }
-
 footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
   align-items: center;
-  background-color: black;
+  background-color: #000;
   text-align: center;
   height: 50px;
   display: flex;
 }
-
 nav ul {
   text-align: center;
   padding-left: 0;
 }
-
 p {
   text-align: center;
   font-size: 1.15rem;
   max-width: 75vw;
 }
-
 .games {
   width: 12rem;
   height: 12rem;
-
   margin: 0.5rem;
 }
-
 #Games_Container,
 #Other_Container {
   background-color: rgba(171, 194, 112, 0.15);
 }
-
 #Games_List {
   text-align: center;
 }
-
 #Header {
   width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #000;
   box-shadow: 1px 1px;
 }
-
 #Home_Container {
   padding-top: 15px;
 }
-
-#Home_Container,
 #Games_Container,
+#Home_Container,
 #Music_Container,
 #Other_Container {
   display: flex;
@@ -94,22 +81,18 @@ p {
   justify-content: space-evenly;
   min-height: 400px;
 }
-
 #Contact_Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 400px;
 }
-
 #Main {
   margin-bottom: 50px;
 }
-
 #Marquee {
   animation: marquee 15s linear infinite;
 }
-
 #My_Face {
   width: 12rem;
   height: 12rem;
@@ -117,14 +100,12 @@ p {
   border-top-left-radius: 50% 25%;
   border-bottom-right-radius: 50% 25%;
   border-bottom-left-radius: 50% 25%;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 25px 50px 15px;
   border: 10px solid transparent;
 }
-
 #Last_Name {
   color: var(--main-bg-color);
 }
-
 #LilFlame_GIF {
   width: 50px;
 }

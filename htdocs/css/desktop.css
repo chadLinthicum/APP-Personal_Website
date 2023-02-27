@@ -7,18 +7,17 @@ nav ul {
 li {
   display: inline-block;
   list-style-type: none;
-  /* padding: 0 1.5%; */
 }
-#Home_Container,
+#Contact_Container,
 #Games_Container,
+#Home_Container,
 #Music_Container,
-#Other_Container,
-#Contact_Container {
+#Other_Container {
   flex-wrap: wrap;
 }
 #My_Name {
   text-align: center;
-  color: white;
+  color: #fff;
   font-size: 2rem;
 }
 #Hamburger {
