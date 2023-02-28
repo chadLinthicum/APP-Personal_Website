@@ -9,6 +9,11 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 1rem;
+}
 address {
   margin: auto;
 }
@@ -24,11 +29,6 @@ body {
   background-size: cover;
   color: #fff;
 }
-a {
-  text-decoration: none;
-  font-weight: 700;
-  padding: 0 1rem;
-}
 footer {
   position: fixed;
   bottom: 0;
@@ -39,6 +39,12 @@ footer {
   height: 50px;
   display: flex;
 }
+.categoryGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 nav ul {
   text-align: center;
   padding-left: 0;
@@ -48,17 +54,23 @@ p {
   font-size: 1.15rem;
   max-width: 75vw;
 }
-.games {
+.imageDecor {
   width: 12rem;
   height: 12rem;
-  margin: 0.5rem;
+  border-top-right-radius: 50% 25%;
+  border-top-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  border-bottom-left-radius: 50% 25%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 25px 50px 15px;
+  border: 10px solid #484c40;
 }
-#Games_Container,
-#Other_Container {
-  background-color: rgba(171, 194, 112, 0.15);
+#Contact_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#Games_List {
-  text-align: center;
+#Fill_Container {
+  min-height: 400px;
 }
 #Header {
   width: 100vw;
@@ -74,24 +86,20 @@ p {
 #Games_Container,
 #Home_Container,
 #Music_Container,
-#Other_Container {
+#Other_Container,
+#Projects_Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  min-height: 400px;
-}
-#Contact_Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 400px;
 }
 #Main {
   margin-bottom: 50px;
+  text-align: center;
 }
-#Marquee {
-  animation: marquee 15s linear infinite;
+#Music_Container,
+#Projects_Container {
+  background-color: rgba(171, 194, 112, 0.15);
 }
 #My_Face {
   width: 12rem;
@@ -103,6 +111,7 @@ p {
   box-shadow: rgba(0, 0, 0, 0.5) 0 25px 50px 15px;
   border: 10px solid transparent;
 }
+
 #Last_Name {
   color: var(--main-bg-color);
 }

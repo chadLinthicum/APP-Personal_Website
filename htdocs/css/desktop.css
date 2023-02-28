@@ -8,11 +8,13 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+
 #Contact_Container,
 #Games_Container,
 #Home_Container,
 #Music_Container,
-#Other_Container {
+#Other_Container,
+#Projects_Container {
   flex-wrap: wrap;
 }
 #My_Name {
