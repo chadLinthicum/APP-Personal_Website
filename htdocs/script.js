@@ -1,8 +1,8 @@
-$(document).ready(function () {
-  setMainContentMarginTop();
-});
+// $(document).ready(function () {
+//   setMainContentMarginTop();
+// });
 
-window.onresize = setMainContentMarginTop;
+// window.onresize = setMainContentMarginTop;
 
 let hamburger = document.getElementById("Hamburger");
 let nav = document.getElementById("Nav");
@@ -31,14 +31,14 @@ document.querySelectorAll('a[href^="#"').forEach((anchor) => {
   });
 });
 
-function setMainContentMarginTop() {
-  let headerHeight = document.getElementById("Header").offsetHeight;
-  let mainMarginTopPx = document.getElementById("Main");
-  mainMarginTopPx.style.marginTop = headerHeight + "px";
-  // console.log(headerHeight)
-}
+// function setMainContentMarginTop() {
+//   let headerHeight = document.getElementById("Header").offsetHeight;
+//   let mainMarginTopPx = document.getElementById("Main");
+//   mainMarginTopPx.style.marginTop = headerHeight + "px";
+//   // console.log(headerHeight)
+// }
 
-//Adds a top to anchor jumps
+//Adds a top spacing to anchor jumps
 $(".nav-link").click(function () {
   let headerHeight = document.getElementById("Header").offsetHeight;
   var divId = $(this).attr("href");

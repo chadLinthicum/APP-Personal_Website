@@ -37,6 +37,11 @@ nav ul {
   left: 3%;
   width: 40px;
 }
+
+#Header {
+  height: 70px;
+}
+
 #Home_Container {
   display: flex;
   flex-direction: column;
@@ -44,6 +49,7 @@ nav ul {
   justify-content: space-evenly;
 }
 #My_Name {
+  font-size: 1.8rem;
   float: right;
   padding-right: 5%;
 }
