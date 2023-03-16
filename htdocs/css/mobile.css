@@ -49,16 +49,7 @@ nav ul {
   justify-content: space-evenly;
 }
 #LilFlame_GIF {
-  width: 50px;
   animation: move-rtl 6000ms linear infinite;
-}
-@keyframes move-rtl {
-  0% {
-    transform: translateX(-250px);
-  }
-  100% {
-    transform: translateX(100vw);
-  }
 }
 #My_Name {
   font-size: 1.8rem;

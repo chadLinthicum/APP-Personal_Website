@@ -33,7 +33,7 @@ footer {
   align-items: center;
   background-color: #000;
   text-align: center;
-  height: 50px;
+  height: 30px;
   display: flex;
 }
 h2 {
@@ -141,7 +141,19 @@ p {
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   border: 7.5px solid transparent;
 }
-
 #Last_Name {
   color: var(--main-bg-color);
+}
+#LilFlame_GIF {
+  background: url("../assets/lilFlame.gif") no-repeat 5px 8px;
+  width: 30px;
+  height: 25px;
+}
+@keyframes move-rtl {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
 }
