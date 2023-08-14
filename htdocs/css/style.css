@@ -33,7 +33,7 @@ footer {
   align-items: center;
   background-color: #000;
   text-align: center;
-  height: 30px;
+  height: 50px;
   display: flex;
 }
 h2 {
@@ -57,6 +57,8 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 75vw;
+  margin: auto;
 }
 .card {
   /* border-top-right-radius: 50% 25%;
@@ -146,8 +148,8 @@ p {
 }
 #LilFlame_GIF {
   background: url("../assets/lilFlame.gif") no-repeat 5px 8px;
-  width: 30px;
-  height: 25px;
+  width: 50px;
+  height: 35px;
 }
 @keyframes move-rtl {
   0% {
