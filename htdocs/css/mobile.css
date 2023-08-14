@@ -56,3 +56,11 @@ nav ul {
   float: right;
   padding-right: 5%;
 }
+#Logo_Min {
+  margin-top: 100px;
+  max-width: 10rem;
+}
+#Nametag {
+  margin-top: 20px;
+  width: 40vw;
+}
