@@ -22,6 +22,11 @@ nav ul {
 .popout-hide a {
   display: none;
 }
+
+.popout-hide img {
+  display: none;
+}
+
 .popout-show {
   top: 0;
   right: 0;
@@ -56,7 +61,7 @@ nav ul {
   float: right;
   padding-right: 5%;
 }
-#Logo_Min {
+#Logo_Min img {
   margin-top: 100px;
   max-width: 10rem;
 }
