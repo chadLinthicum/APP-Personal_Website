@@ -1,8 +1,8 @@
 <p align="center">
  <br>
- <b>Description:</b> A personal website proof-of-concept written in HTML, CSS, and JavaScript.<br>
+ <b>Description:</b> My personal websitefor my portfolio.<br>
  <br>
- <b>View in browser: </b><a href="metalvain.epizy.com">Here</a><br>
+ <b>View in browser: </b><a href="chad.epizy.com">Here</a><br>
  <br>
  <b>Installation:</b> Download the repository and<br> open the index.html file.<br>
  <br>
