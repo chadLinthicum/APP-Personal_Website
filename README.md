@@ -1,6 +1,6 @@
 <p align="center">
  <br>
- <b>Description:</b> My personal websitefor my portfolio.<br>
+ <b>Description:</b> My personal website for my portfolio.<br>
  <br>
  <b>View in browser: </b><a href="chad.epizy.com">Here</a><br>
  <br>
