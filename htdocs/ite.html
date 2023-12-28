@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chad Linthicum's Website</title>
+    <meta
+      name="description"
+      content="Most of the cool stuff about Chad Linthicum."
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="css/desktop.css"
+      rel="stylesheet"
+      media="(min-width: 721px)"
+    />
+    <link
+      href="css/mobile.css"
+      rel="stylesheet"
+      media="(max-width: 720px)"
+    />
+  </head>
+  <body>
+    <header id="Header">
+      <input
+        id="Hamburger"
+        type="image"
+        src="assets/eggNoHatch.webp"
+        alt="="
+      />
+      <h1 id="My_Name">Chad <span id="Last_Name">Linthicum</span></h1>
+      <nav id="Nav" class="popout-hide">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li>
+            <a href="index.html#Games_Container" class="nav-link">Games</a>
+          </li>
+          <li>
+            <a href="index.html#Projects_Container" class="nav-link"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="index.html#Music_Container" class="nav-link">Music</a>
+          </li>
+          <li>
+            <a href="index.html#Other_Container" class="nav-link">Other</a>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li id="Logo_Min">
+            <img src="assets/logo.webp" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="Main">
+      <section id="Contact_Container">
+          <h1>I.T.E. - Integrated Training Environment</h1>
+          <span>
+            The Immersive Training Environment is a 3D environment created for
+            the Marine Corps that provides the user with readily accessible
+            training and troubleshooting instruction. The ITE comes
+            pre-installed on workstations provided to CTP Operators in the
+            Marine Corps. When launched, the ITE runs in the browser utilizing a
+            Unity WebGL based 3D environment that allows the user to interact
+            with the environment and launch an HTML5 based menu system to view
+            lessons, checklists, quick reference videos, assessments and
+            documentation. Additionally the ITE has a C# based local web server
+            component that is bundled with the application that serves the
+            purpose of authenticating users, serving content, and tracking user
+            statistics throughout their use of the ITE.
+          </span>
+          <p id="Disclaimer">
+            This product is property of S.A.I.C., <br/>only screenshots are available for me to share
+          </p>
+          <div id="SlideShow">
+            <img class="mySlides" src="assets/SAIC/ITE2.webp" />
+            <img class="mySlides" src="assets/SAIC/APEX.webp" />
+            <img class="mySlides" src="assets/SAIC/ITE3.webp" />
+            <img class="mySlides" src="assets/SAIC/ITE4.webp" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
