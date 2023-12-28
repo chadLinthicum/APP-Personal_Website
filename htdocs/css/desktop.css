@@ -9,6 +9,28 @@ li {
   list-style-type: none;
 }
 
+.card {
+  /* border-top-right-radius: 50% 25%;
+  border-top-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  border-bottom-left-radius: 50% 25%; */
+  border-radius: 25%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
+  border: 5px solid #5c6a40;
+  margin: 2.5%;
+  width: 210px;
+}
+.card h4 {
+  padding: 0;
+  margin-bottom: 0;
+}
+.card-image {
+  width: 10rem;
+  height: 10rem;
+  padding: 15px;
+  border-radius: 25%;
+}
+
 #Contact_Container,
 #Games_Container,
 #Home_Container,
