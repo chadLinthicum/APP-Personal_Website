@@ -4,7 +4,11 @@
   font-display: swap;
 }
 :root {
-  --main-bg-color: #abc270;
+  --main-color-1: rgb(15, 31, 42);
+  --main-color-2: rgb(37, 64, 89);
+  --main-color-3: rgb(68, 112, 154);
+  --main-color-4: rgb(95, 154, 212);
+  --main-color-5: rgb(114, 183, 252);
 }
 * {
   box-sizing: border-box;
@@ -41,7 +45,7 @@ h2 {
 h3 {
 }
 h4 {
-  color: rgb(173, 188, 85);
+  color: var(--main-color-4);
 }
 nav ul {
   text-align: center;
@@ -58,6 +62,9 @@ p {
   justify-content: center;
 
   margin: auto;
+}
+.card {
+  border: 5px solid var(--main-color-3);
 }
 
 #Contact_Container {
@@ -116,7 +123,7 @@ p {
 }
 #Games_Container,
 #Music_Container {
-  background-color: rgba(171, 194, 112, 0.15);
+  background-color: var(--main-color-2);
 }
 #My_Face {
   width: 13rem;
@@ -133,7 +140,7 @@ p {
   color: #fff;
 }
 #Last_Name {
-  color: var(--main-bg-color);
+  color: var(--main-color-4);
 }
 #LilFlame_GIF {
   background: url("../assets/lilFlame.gif") no-repeat 5px 8px;
