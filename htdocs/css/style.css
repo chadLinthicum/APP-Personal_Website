@@ -4,12 +4,12 @@
   font-display: swap;
 }
 :root {
-  --main-color-bg1: #848484;
-  --main-color-bg2: #4c4c62;
-  --main-color-border: #79777e;
-  --main-color-text: #4c4c62;
-  --main-color-name: #79777e;
-  --main-color-card: #c3c3c3;
+  --main-color-bg1: #413e37;
+  --main-color-bg2: #9e9694;
+  --main-color-border: #d3b247;
+  --main-color-card: #d4d3c2;
+  --main-color-name: #d3b247;
+  --main-color-text: #413e37;
 }
 * {
   box-sizing: border-box;
