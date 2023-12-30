@@ -4,11 +4,12 @@
   font-display: swap;
 }
 :root {
-  --main-color-1: rgb(15, 31, 42);
-  --main-color-2: rgb(37, 64, 89);
-  --main-color-3: rgb(68, 112, 154);
-  --main-color-4: rgb(95, 154, 212);
-  --main-color-5: rgb(114, 183, 252);
+  --main-color-bg1: #848484;
+  --main-color-bg2: #4c4c62;
+  --main-color-border: #79777e;
+  --main-color-text: #4c4c62;
+  --main-color-name: #79777e;
+  --main-color-card: #c3c3c3;
 }
 * {
   box-sizing: border-box;
@@ -26,7 +27,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-color: rgba(55, 55, 55, 1);
+  background-color: var(--main-color-bg1);
   background-size: cover;
   color: #fff;
 }
@@ -45,7 +46,7 @@ h2 {
 h3 {
 }
 h4 {
-  color: var(--main-color-4);
+  color: var(--main-color-text);
 }
 nav ul {
   text-align: center;
@@ -64,7 +65,8 @@ p {
   margin: auto;
 }
 .card {
-  border: 5px solid var(--main-color-3);
+  border: 5px solid var(--main-color-border);
+  background-color: var(--main-color-card);
 }
 
 #Contact_Container {
@@ -123,7 +125,7 @@ p {
 }
 #Games_Container,
 #Music_Container {
-  background-color: var(--main-color-2);
+  background-color: var(--main-color-bg2);
 }
 #My_Face {
   width: 13rem;
@@ -140,7 +142,7 @@ p {
   color: #fff;
 }
 #Last_Name {
-  color: var(--main-color-4);
+  color: var(--main-color-name);
 }
 #LilFlame_GIF {
   background: url("../assets/lilFlame.gif") no-repeat 5px 8px;
