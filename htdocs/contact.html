@@ -52,11 +52,44 @@
     </header>
     <div id="Main">
       <section id="Contact_Container">
-        <div>
-          <p>📬 Drop me a line...</p>
-          <!-- <img id="Nametag" src="assets/nametag.webp" alt="nametag" /> -->
-          <p>chad.a.linthicum@gmail.com</p>
-        </div>
+        <h3>Drop me a line 📬</h3>
+        <form
+          target="_blank"
+          action="https://formsubmit.co/chad.a.linthicum@gmail.com"
+          method="POST"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              class="form-control"
+              name="message"
+              rows="10"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">
+              Send!
+            </button>
+            <p>
+              I can also be reached at:<br /><strong
+                >chad.a.linthicum@gmail.com</strong
+              >
+            </p>
+          </div>
+        </form>
       </section>
     </div>
   </body>
