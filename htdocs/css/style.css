@@ -45,9 +45,6 @@ h2 {
 }
 h3 {
 }
-h4 {
-  color: var(--main-color-text);
-}
 nav ul {
   text-align: center;
   padding-left: 0;
@@ -67,6 +64,15 @@ p {
 .card {
   border: 5px solid var(--main-color-border);
   background-color: var(--main-color-card);
+}
+.card p {
+  margin: 10px;
+  color: var(--main-color-text);
+  font-weight: bold;
+}
+.card-image {
+  border: 2.5px solid black;
+  border-radius: 25%;
 }
 .form-group {
   display: flex;

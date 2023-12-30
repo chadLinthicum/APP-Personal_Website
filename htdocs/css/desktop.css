@@ -19,15 +19,9 @@ li {
   margin: 2.5%;
   width: 210px;
 }
-.card h4 {
-  padding: 0;
-  margin-bottom: 0;
-}
 .card-image {
   width: 10rem;
   height: 10rem;
-  padding: 15px;
-  border-radius: 25%;
 }
 
 #Contact_Container,
