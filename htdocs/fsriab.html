@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="script.js"></script>
+    <script defer src="nav.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,40 +27,25 @@
       <a href="index.html"
         ><h1 id="My_Name">Chad <span id="Last_Name">Linthicum</span></h1></a
       >
-      <nav id="Nav" class="popout-hide">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li>
-            <a href="index.html#Games_Container" class="nav-link">Games</a>
-          </li>
-          <li>
-            <a href="index.html#Projects_Container" class="nav-link"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a href="index.html#Music_Container" class="nav-link">Music</a>
-          </li>
-          <li>
-            <a href="index.html#Other_Container" class="nav-link">Other</a>
-          </li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li id="Logo_Min">
-            <img src="assets/logo.webp" alt="" />
-          </li>
-        </ul>
-      </nav>
+      <x-nav id="Nav" class="popout-hide"></x-nav>
     </header>
     <div id="Main">
       <section id="Contact_Container">
         <h1>FSR in a Box</h1>
         <span>
-          The FSR in a Box application is a slimmed down version of the
+          Field Service Representative in a Box (FSRiaB) is a slimmed down
+          version of the
           <a id="Anchor-Reference" href="ite.html">I.T.E.</a> that does not
-          include the WebGL builds. This app is distributed to Windows machines
-          and Android tablets via APK ADB (Android Development Bridge). The user
-          can navigate the menu system to view lessons, checklists, quick
-          reference videos, assessments and documentation
+          include the WebGL builds. It is designed to empower users with easily
+          accessible training and troubleshooting resources. FSRiaB offers
+          desktop and Android versions, which come pre-installed on workstations
+          and MCH tablets. Upon launching the FSRiaB application, users can
+          engage with its HTML5-based menu system to access a range of valuable
+          materials, including lessons/assessments (exclusive to the desktop
+          version), checklists, quick reference videos, and documentation.
+          Additionally, the FSRiaB desktop app incorporates a C#-based local web
+          server component that is seamlessly integrated into the application,
+          facilitating the delivery of content to users.
         </span>
         <p id="Disclaimer">
           This product is property of S.A.I.C., <br />I am only able to provide
