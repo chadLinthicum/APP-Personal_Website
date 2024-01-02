@@ -23,8 +23,8 @@ class NavComponent extends HTMLElement {
               <li><a href="contact.html" class="nav-link">Contact</a></li>
               <li id="Logo_Min">
                 <img src="assets/logo.webp" alt="" />
-              </li>
-            </ul>
+              </li> 
+            </ul> 
         `;
   }
 }
