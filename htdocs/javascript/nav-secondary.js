@@ -7,22 +7,22 @@ class NavSecondaryComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <ul>
-              <li><a href="/htdocs/index.html" class="nav-link">Home</a></li>
+              <li><a href="../../index.html" class="nav-link">Home</a></li>
               <li>
-                <a href="/htdocs/index.html#Games_Container" class="nav-link">Games</a>
+                <a href="../../index.html#Games_Container" class="nav-link">Games</a>
               </li>
               <li>
-                <a href="/htdocs/index.html#Projects_Container" class="nav-link">Projects</a>
+                <a href="../../index.html#Projects_Container" class="nav-link">Projects</a>
               </li>
               <li>
-                <a href="/htdocs/index.html#Music_Container" class="nav-link">Music</a>
+                <a href="../../index.html#Music_Container" class="nav-link">Music</a>
               </li>
               <li>
-                <a href="/htdocs/index.html#Other_Container" class="nav-link">Other</a>
+                <a href="../../index.html#Other_Container" class="nav-link">Other</a>
               </li>
               <li><a href="contact.html" class="nav-link">Contact</a></li>
               <li id="Logo_Min">
-                <img src="/htdocs/assets/logo.webp" alt="" />
+                <img src="../../assets/logo.webp" alt="" />
               </li> 
             </ul> 
         `;
@@ -39,9 +39,9 @@ function toggleNav() {
   nav.classList.toggle("popout-hide");
   nav.classList.toggle("popout-show");
   if (hamburger.src.includes("eggNoHatch.webp")) {
-    hamburger.src = "/htdocs/assets/eggHatch.gif";
+    hamburger.src = "../../assets/eggHatch.gif";
   } else {
-    hamburger.src = "/htdocs/assets/eggNoHatch.webp";
+    hamburger.src = "../../assets/eggNoHatch.webp";
   }
 }
 
