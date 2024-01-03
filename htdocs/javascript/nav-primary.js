@@ -14,7 +14,7 @@ class NavPrimaryComponent extends HTMLElement {
           <li><a href="#Projects_Container" class="nav-link">Projects</a></li>
           <li><a href="#Music_Container" class="nav-link">Music</a></li>
           <li><a href="#Other_Container" class="nav-link">Other</a></li>
-          <li><a href="html/contact.html" class="nav-link">Contact</a></li>
+          <li><a href="html/other/contact.html" class="nav-link">Contact</a></li>
           <li id="Logo_Min">
             <img src="assets/logo.webp" alt="" />
           </li>
