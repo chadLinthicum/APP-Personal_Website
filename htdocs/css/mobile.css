@@ -52,6 +52,12 @@ a {
   height: 100vh;
   transition-duration: 550ms;
 }
+.desktop-only {
+  display: none;
+}
+#Armored-Crusade-Logo {
+  width: 100%;
+}
 #Hamburger {
   position: absolute;
   top: 15px;

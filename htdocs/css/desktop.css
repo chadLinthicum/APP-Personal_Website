@@ -23,7 +23,9 @@ li {
   width: 10rem;
   height: 10rem;
 }
-
+.mobile-only {
+  display: none;
+}
 #Contact_Container,
 #Games_Container,
 #Home_Container,
