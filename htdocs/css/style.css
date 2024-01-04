@@ -45,10 +45,6 @@ h2 {
 }
 h3 {
 }
-#Nav ul {
-  text-align: center;
-  padding-left: 0;
-}
 iframe {
   border: 3px solid black;
 }
@@ -196,6 +192,10 @@ span {
   100% {
     transform: translateX(100vw);
   }
+}
+#Nav ul {
+  text-align: center;
+  padding-left: 0;
 }
 #SlideShow {
   margin-top: 20px;

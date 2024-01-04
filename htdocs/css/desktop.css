@@ -1,14 +1,10 @@
 a {
   color: var(--main-bg-color);
 }
-#Nav ul {
-  font-size: 1.5em;
-}
 li {
   display: inline-block;
   list-style-type: none;
 }
-
 .card {
   /* border-top-right-radius: 50% 25%;
   border-top-left-radius: 50% 25%;
@@ -33,6 +29,11 @@ li {
 #Other_Container,
 #Projects_Container {
   flex-wrap: wrap;
+  /* max-width: 60vw;
+  margin: auto; */
+}
+#Content {
+  max-width: 60vw;
 }
 #Hamburger {
   display: none;
@@ -40,10 +41,12 @@ li {
 #LilFlame_GIF {
   animation: move-rtl 15000ms linear infinite;
 }
-
 #My_Name {
   text-align: center;
   font-size: 2rem;
+}
+#Nav ul {
+  font-size: 1.5em;
 }
 #Logo_Min {
   display: none;
