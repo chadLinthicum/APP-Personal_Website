@@ -2,15 +2,24 @@ a {
   color: #373737;
 }
 .card {
-  /* border-top-right-radius: 50% 25%;
-  border-top-left-radius: 50% 25%;
-  border-bottom-right-radius: 50% 25%;
-  border-bottom-left-radius: 50% 25%; */
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  text-decoration: none;
   border-radius: 25%;
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   margin: 2.5%;
-  width: 125px;
 }
+
+.card p {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 5px;
+}
+
 .card-image {
   width: 5.5rem;
   height: 5.5rem;
