@@ -32,10 +32,10 @@ let nav = document.getElementById("Nav");
 function toggleNav() {
   nav.classList.toggle("popout-hide");
   nav.classList.toggle("popout-show");
-  if (hamburger.src.includes("eggNoHatch.webp")) {
-    hamburger.src = "assets/eggHatch.gif";
+  if (hamburger.src.includes("burger-off.webp")) {
+    hamburger.src = "assets/burger-on.webp";
   } else {
-    hamburger.src = "assets/eggNoHatch.webp";
+    hamburger.src = "assets/burger-off.webp";
   }
 }
 
