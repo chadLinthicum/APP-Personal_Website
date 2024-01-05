@@ -31,6 +31,9 @@ body {
   background-size: cover;
   color: #fff;
 }
+button {
+  cursor: pointer;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -157,7 +160,6 @@ span {
   animation-iteration-count: infinite;
   overflow: hidden;
 }
-
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -169,7 +171,6 @@ span {
     background-position: 0% 50%;
   }
 }
-
 #Games_Container,
 #Home_Container,
 #Music_Container,

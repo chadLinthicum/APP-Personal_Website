@@ -75,6 +75,10 @@ li {
 #Nav ul {
   font-size: 1.5em;
 }
+#Nav a:hover {
+  filter: invert(60%);
+  transition: filter 0.25s ease;
+}
 #Nav_Social {
   margin-right: 0.5rem;
   display: flex;
