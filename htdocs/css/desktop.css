@@ -29,6 +29,13 @@ li {
 .mobile-only {
   display: none;
 }
+.nav_social_icons {
+  filter: invert(1);
+}
+.nav_social_icons:hover {
+  filter: invert(20%);
+  transition: filter 0.25s ease;
+}
 #Contact_Container,
 #Games_Container,
 #Home_Container,
@@ -54,6 +61,18 @@ li {
 }
 #Nav ul {
   font-size: 1.5em;
+}
+#Nav_Social {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#Nav_Social a {
+  margin: 0;
+  padding: 0.35rem;
 }
 #Logo_Min {
   display: none;

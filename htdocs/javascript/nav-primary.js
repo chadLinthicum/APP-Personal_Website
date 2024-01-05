@@ -14,7 +14,32 @@ class NavPrimaryComponent extends HTMLElement {
           <li><a href="#Projects_Container" class="nav-link">Projects</a></li>
           <li><a href="#Music_Container" class="nav-link">Music</a></li>
           <li><a href="#Other_Container" class="nav-link">Other</a></li>
-          <li><a href="html/other/contact.html" class="nav-link">Contact</a></li>
+          <li><a href="#Contact_Container" class="nav-link">Contact</a></li>
+          <li>
+              <div id="Nav_Social">
+                <a href="https://www.linkedin.com/in/chad-a-linthicum/" target="_blank"
+                  ><img
+                    class="nav_social_icons"
+                    src="assets/social/linkedIn.svg"
+                    alt=""
+                /></a>
+                <a
+                  href="https://github.com/chadLinthicum"
+                  target="_blank"
+                  ><img
+                    class="nav_social_icons"
+                    src="assets/social/github.svg"
+                    alt=""
+                /></a>
+                <a href="https://www.youtube.com/@Metalvain4" target="_blank"
+                  ><img
+                    class="nav_social_icons"
+                    src="assets/social/youtube.svg"
+                    alt=""
+                /></a>
+                
+              </div>
+            </li>
           <li id="Logo_Min">
             <img src="assets/logo.webp" alt="" />
           </li>

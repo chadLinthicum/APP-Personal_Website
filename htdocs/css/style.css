@@ -99,6 +99,13 @@ span {
   background-color: #d89488;
   width: 80px;
 }
+.nav_social_icons {
+  filter: invert(1);
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: fill;
+  padding: 5px;
+}
 #Anchor-Reference {
   color: rgb(178, 191, 116);
 }
@@ -108,13 +115,7 @@ span {
   border: 3px solid black;
   box-shadow: 2px 2px #000000;
 }
-#Contact_Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
+
 #Disclaimer {
   color: rgb(213, 58, 58);
   font-size: 1rem;
@@ -163,7 +164,8 @@ span {
   text-align: center;
 }
 #Games_Container,
-#Music_Container {
+#Music_Container,
+#Contact_Container {
   background-color: var(--main-color-bg2);
 }
 #My_Face {
@@ -198,6 +200,10 @@ span {
 #Nav ul {
   text-align: center;
   padding-left: 0;
+}
+#Nav_Social_Bottom {
+  display: flex;
+  align-items: center;
 }
 #SlideShow {
   margin-top: 20px;

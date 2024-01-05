@@ -20,7 +20,7 @@ class NavSecondaryComponent extends HTMLElement {
               <li>
                 <a href="../../index.html#Other_Container" class="nav-link">Other</a>
               </li>
-              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="../../index.html#Contact_Container" class="nav-link">Contact</a></li>
               <li id="Logo_Min">
                 <img src="../../assets/logo.webp" alt="" />
               </li> 
