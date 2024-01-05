@@ -46,7 +46,7 @@ li {
   display: none;
 }
 #Marquee {
-  animation: move-rtl 15000ms linear infinite;
+  animation: move-rtl 25000ms linear infinite;
 }
 #My_Name {
   text-align: center;
