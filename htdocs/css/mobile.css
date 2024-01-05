@@ -51,7 +51,10 @@ a {
   display: none;
 }
 #Armored-Crusade-Logo {
-  width: 100%;
+  width: 90%;
+}
+#Content {
+  max-width: 90vw;
 }
 #Hamburger {
   position: absolute;

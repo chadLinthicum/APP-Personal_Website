@@ -113,10 +113,13 @@ span {
   color: rgb(178, 191, 116);
 }
 #Armored-Crusade-Logo {
-  margin: 10px;
+  margin-top: 20px;
   border-radius: 25px;
   border: 3px solid black;
   box-shadow: 2px 2px #000000;
+}
+#Content {
+  margin: auto;
 }
 #Disclaimer {
   color: rgb(213, 58, 58);
