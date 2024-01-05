@@ -48,6 +48,7 @@ li {
 }
 #Content {
   max-width: 60vw;
+  margin: auto;
 }
 #Home_Container p {
   font-size: 2rem;

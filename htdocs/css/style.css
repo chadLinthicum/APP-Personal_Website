@@ -56,7 +56,7 @@ iframe {
 }
 p {
   font-size: 1.15rem;
-  max-width: 75vw;
+  /* max-width: 75vw; */
 }
 span {
   padding-top: 10px;
