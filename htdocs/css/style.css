@@ -179,6 +179,7 @@ span {
 }
 #My_Name {
   color: #fff;
+  cursor: pointer;
 }
 #Last_Name {
   color: var(--main-color-name);
