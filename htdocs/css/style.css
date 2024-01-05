@@ -115,7 +115,6 @@ span {
   border: 3px solid black;
   box-shadow: 2px 2px #000000;
 }
-
 #Disclaimer {
   color: rgb(213, 58, 58);
   font-size: 1rem;
@@ -149,7 +148,28 @@ span {
 }
 #Home_Container {
   padding-top: 15px;
+  background: linear-gradient(45deg, var(--main-color-name), rgb(14, 64, 121));
+  background-size: 200% 300%;
+  animation: gradientAnimation 80s ease infinite;
+  animation-name: gradientAnimation;
+  animation-duration: 8s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  overflow: hidden;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #Games_Container,
 #Home_Container,
 #Music_Container,
@@ -169,8 +189,8 @@ span {
   background-color: var(--main-color-bg2);
 }
 #My_Face {
-  width: 13rem;
-  height: 13rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   /* border-top-right-radius: 50%;
   border-top-left-radius: 50%;

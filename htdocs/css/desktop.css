@@ -49,11 +49,24 @@ li {
 #Content {
   max-width: 60vw;
 }
+#Home_Container p {
+  font-size: 2rem;
+}
 #Hamburger {
   display: none;
 }
+#Home_Container {
+  height: calc(100vh - 162.8px);
+}
+#Home_Content {
+  max-width: 50vw;
+}
 #Marquee {
   animation: move-rtl 25000ms linear infinite;
+}
+#My_Face {
+  width: 13rem;
+  height: 13rem;
 }
 #My_Name {
   text-align: center;

@@ -63,12 +63,12 @@ a {
 #Header {
   height: 70px;
 }
-
 #Home_Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: calc(100vh - 120px);
 }
 #Marquee {
   animation: move-rtl 15000ms linear infinite;
