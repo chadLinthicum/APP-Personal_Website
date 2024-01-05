@@ -121,7 +121,7 @@ span {
   font-size: 1rem;
 }
 #Fill_Container {
-  min-height: 100px;
+  min-height: 50px;
 }
 #Header {
   position: sticky;
