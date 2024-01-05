@@ -41,6 +41,9 @@ footer {
   height: 50px;
   display: flex;
 }
+footer span {
+  font-size: 1.25rem;
+}
 h2 {
 }
 h3 {
@@ -180,17 +183,15 @@ span {
 #Last_Name {
   color: var(--main-color-name);
 }
-#LilFlame_GIF {
-  background: url("../assets/lilFlame.gif") no-repeat 5px 8px;
-  width: 50px;
-  height: 35px;
+#Marquee {
+  white-space: nowrap;
 }
 @keyframes move-rtl {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(100vw);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(-1000px);
   }
 }
 #Nav ul {

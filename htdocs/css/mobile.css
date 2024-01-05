@@ -70,8 +70,8 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
-#LilFlame_GIF {
-  animation: move-rtl 6000ms linear infinite;
+#Marquee {
+  animation: move-rtl 15000ms linear infinite;
 }
 #My_Name {
   font-size: 1.8rem;
