@@ -160,28 +160,23 @@ span {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+#particles-js {
+  height: calc(100vh - 120px);
+  background-color: #494141;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 #Home_Container {
-  padding-top: 15px;
-  background: linear-gradient(45deg, var(--main-color-name), rgb(14, 64, 121));
-  background-size: 200% 300%;
-  animation: gradientAnimation 80s ease infinite;
-  animation-name: gradientAnimation;
-  animation-duration: 8s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 #Games_Container,
 #Home_Container,
 #Music_Container,
