@@ -160,25 +160,20 @@ span {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
-#particles-js {
-  height: calc(100vh - 120px);
-  background-color: #494141;
-  background-image: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
 #Home_Container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
 }
-
+#Job_Title {
+  font-weight: bold;
+}
 #Games_Container,
-#Home_Container,
 #Music_Container,
 #Other_Container,
 #Projects_Container {
@@ -204,6 +199,8 @@ span {
 #My_Name {
   color: #fff;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 #Last_Name {
   color: var(--main-color-name);
@@ -226,6 +223,13 @@ span {
 #Nav_Social_Bottom {
   display: flex;
   align-items: center;
+}
+#particles-js {
+  background-color: #494141;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 #SlideShow {
   margin-top: 20px;

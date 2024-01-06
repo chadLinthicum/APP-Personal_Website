@@ -63,29 +63,22 @@ a {
   height: 70px;
 }
 #Home_Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   height: calc(100vh - 120px);
+}
+#Job_Title {
+  font-size: 1.5rem;
 }
 #Marquee {
   animation: move-rtl 15000ms linear infinite;
 }
 #My_Name {
-  font-size: 1.8rem;
-  float: right;
-  padding-right: 5%;
+  font-size: 2.5rem;
 }
 #Logo_Min img {
   position: absolute;
   bottom: 0;
   right: 0;
   max-width: 10rem;
-}
-#Nametag {
-  margin-top: 20px;
-  width: 40vw;
 }
 #Nav {
   padding-top: 5vh;
@@ -101,4 +94,7 @@ a {
 }
 #Nav_Social a {
   padding: 0.1px;
+}
+#particles-js {
+  height: calc(100vh - 120px);
 }

@@ -36,30 +36,31 @@ li {
   filter: invert(20%);
   transition: filter 0.25s ease;
 }
-#Contact_Container,
-#Games_Container,
-#Home_Container,
-#Music_Container,
-#Other_Container,
-#Projects_Container {
-  flex-wrap: wrap;
-  /* max-width: 60vw;
-  margin: auto; */
-}
 #Content {
   max-width: 50vw;
 }
-#Home_Container p {
-  font-size: 2rem;
+#Header {
+  height: 100px;
 }
 #Hamburger {
   display: none;
 }
 #Home_Container {
-  height: calc(100vh - 162.8px);
+  top: 100px;
+  height: calc(100vh - 150px);
 }
-#Home_Content {
-  max-width: 50vw;
+#Home_Container p {
+  font-size: 2rem;
+}
+#Job_Title {
+  font-size: 2rem;
+}
+#Logo_Min {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
 }
 #Marquee {
   animation: move-rtl 25000ms linear infinite;
@@ -69,10 +70,10 @@ li {
   height: 13rem;
 }
 #My_Name {
-  text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
 }
 #Nav ul {
+  padding-top: 65px;
   font-size: 1.5em;
 }
 #Nav a:hover {
@@ -91,6 +92,6 @@ li {
   margin: 0;
   padding: 0.35rem;
 }
-#Logo_Min {
-  display: none;
+#particles-js {
+  height: calc(100vh - 150px);
 }
