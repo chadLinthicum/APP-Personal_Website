@@ -207,6 +207,10 @@ span {
 #Last_Name {
   color: var(--main-color-name);
 }
+#Logo_Min_Main {
+  margin-bottom: 20px;
+  filter: invert();
+}
 #Marquee {
   white-space: nowrap;
 }

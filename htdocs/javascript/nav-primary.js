@@ -39,7 +39,7 @@ class NavPrimaryComponent extends HTMLElement {
                 /></a>
               </div>
           </li>
-          <li id="Logo_Min">
+          <li id="Logo_Min_Nav">
             <img src="assets/logo.webp" alt="" />
           </li>
         </ul>

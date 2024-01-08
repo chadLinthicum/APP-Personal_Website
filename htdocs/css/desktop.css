@@ -58,7 +58,10 @@ li {
 #Job_Title {
   font-size: 2rem;
 }
-#Logo_Min {
+#Logo_Min_Main {
+  width: 150px;
+}
+#Logo_Min_Nav {
   display: none;
   position: absolute;
   top: 0;
