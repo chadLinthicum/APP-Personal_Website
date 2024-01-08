@@ -45,6 +45,9 @@ li {
 #Hamburger {
   display: none;
 }
+#Header a {
+  padding: 0 1rem;
+}
 #Home_Container {
   top: 100px;
   height: calc(100vh - 150px);
@@ -72,6 +75,9 @@ li {
 #My_Name {
   font-size: 4rem;
 }
+#My_Name_Header {
+  display: none;
+}
 #Nav ul {
   padding-top: 65px;
   font-size: 1.5em;
@@ -91,6 +97,9 @@ li {
 #Nav_Social a {
   margin: 0;
   padding: 0.35rem;
+}
+#Nav_Social_Header a {
+  display: none;
 }
 #particles-js {
   height: calc(100vh - 150px);
