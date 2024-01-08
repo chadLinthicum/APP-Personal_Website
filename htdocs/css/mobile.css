@@ -61,6 +61,9 @@ a {
 }
 #Header {
   height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #Home_Container {
   height: calc(100vh - 120px);
@@ -73,6 +76,10 @@ a {
 }
 #My_Name {
   font-size: 2.5rem;
+}
+#My_Name_Header {
+  font-size: 1.75rem;
+  margin-top: 20px;
 }
 #Logo_Min img {
   position: absolute;
@@ -92,8 +99,16 @@ a {
   filter: invert(1);
   margin-top: 15px;
 }
-#Nav_Social a {
-  padding: 0.1px;
+#Nav_Social_Header {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.nav_social_icons_header {
+  filter: invert(1);
+  width: 20px;
+  height: 20px;
+  margin: 3px;
 }
 #particles-js {
   height: calc(100vh - 120px);

@@ -4,8 +4,8 @@
   font-display: swap;
 }
 :root {
-  --main-color-bg1: #413e37;
-  --main-color-bg2: #857e7c;
+  --main-color-bg1: #696a70;
+  --main-color-bg2: #413e37;
   --main-color-border: #d3b247;
   --main-color-card: #cfc6c4;
   --main-color-name: #d3b247;
@@ -109,6 +109,9 @@ span {
   background-color: #d89488;
   width: 80px;
 }
+.hidden {
+  display: none;
+}
 .nav_social_icons {
   filter: invert(1);
   width: 3.5rem;
@@ -149,7 +152,6 @@ span {
 #Header a {
   text-decoration: none;
   font-weight: 600;
-  padding: 0 1rem;
 }
 #Header h1 {
   margin: 0;
@@ -225,11 +227,7 @@ span {
   align-items: center;
 }
 #particles-js {
-  background-color: #494141;
-  background-image: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-color: var(--main-color-bg2);
 }
 #SlideShow {
   margin-top: 20px;

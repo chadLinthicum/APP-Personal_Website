@@ -7,20 +7,20 @@ class NavSecondaryComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <ul>
-              <li><a href="../../index.html" class="nav-link">Home</a></li>
+              <li><a href="../../index.html" >Home</a></li>
               <li>
-                <a href="../../index.html#Games_Container" class="nav-link">Games</a>
+                <a href="../../index.html#Games_Container" >Games</a>
               </li>
               <li>
-                <a href="../../index.html#Projects_Container" class="nav-link">Projects</a>
+                <a href="../../index.html#Projects_Container" >Projects</a>
               </li>
               <li>
-                <a href="../../index.html#Music_Container" class="nav-link">Music</a>
+                <a href="../../index.html#Music_Container" >Music</a>
               </li>
               <li>
-                <a href="../../index.html#Other_Container" class="nav-link">Other</a>
+                <a href="../../index.html#Other_Container" >Other</a>
               </li>
-              <li><a href="../../index.html#Contact_Container" class="nav-link">Contact</a></li>
+              <li><a href="../../index.html#Contact_Container" >Contact</a></li>
               <li>
                 <div id="Nav_Social">
                   <a href="https://www.linkedin.com/in/chad-a-linthicum/" target="_blank"
