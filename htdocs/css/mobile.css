@@ -54,6 +54,7 @@ a {
   filter: invert(1);
   width: 20px;
   height: 20px;
+  margin: 2px;
 }
 #Content {
   max-width: 90vw;

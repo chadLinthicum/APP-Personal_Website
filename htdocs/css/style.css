@@ -4,12 +4,13 @@
   font-display: swap;
 }
 :root {
-  --main-color-bg1: #696a70;
+  --main-color-bg1: #515256;
   --main-color-bg2: #413e37;
   --main-color-border: #d3b247;
   --main-color-card: #cfc6c4;
   --main-color-name: #d3b247;
   --main-color-text: #413e37;
+  --main-color-button: #d3b247;
 }
 * {
   box-sizing: border-box;
@@ -68,6 +69,7 @@ p {
 span {
   padding-top: 10px;
   padding-bottom: 10px;
+  text-wrap: balance;
 }
 .category-group {
   display: flex;
@@ -106,7 +108,7 @@ span {
   box-shadow: 1.5px 1.5px #000000;
 }
 .form-group button {
-  background-color: #d89488;
+  background-color: var(--main-color-button);
   width: 80px;
 }
 .hidden {
@@ -178,18 +180,23 @@ span {
 #Games_Container,
 #Music_Container,
 #Other_Container,
-#Projects_Container {
+#Projects_Container,
+#Contact_Container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  border-top: 5px solid black;
+}
+#Last_Name {
+  color: var(--main-color-name);
+}
+#Logo_Min_Main {
+  filter: invert();
+  margin-bottom: 20px;
 }
 #Main {
   text-align: center;
-}
-#Projects_Container,
-#Other_Container {
-  background-color: var(--main-color-bg2);
 }
 #My_Face {
   width: 10rem;
@@ -203,13 +210,6 @@ span {
   cursor: pointer;
   padding: 0;
   margin: 0;
-}
-#Last_Name {
-  color: var(--main-color-name);
-}
-#Logo_Min_Main {
-  margin-bottom: 20px;
-  filter: invert();
 }
 #Marquee {
   white-space: nowrap;
@@ -229,6 +229,10 @@ span {
 #Nav_Social_Bottom {
   display: flex;
   align-items: center;
+}
+#Projects_Container,
+#Other_Container {
+  background-color: var(--main-color-bg2);
 }
 #particles-js {
   background-color: var(--main-color-bg2);
