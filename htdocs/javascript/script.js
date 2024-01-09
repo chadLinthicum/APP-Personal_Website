@@ -11,6 +11,14 @@
 //   // console.log(headerHeight)
 // }
 
+window.addEventListener("scroll", function () {
+  let element = document.getElementById("My_Name");
+  let anchor_My_Name_Header = document.getElementById("anchor_My_Name_Header");
+  if (window.scrollY > element.offsetHeight + element.offsetTop) {
+    anchor_My_Name_Header.style.opacity = "1";
+  }
+});
+
 //Slideshow
 var slideIndex = 0;
 carousel();

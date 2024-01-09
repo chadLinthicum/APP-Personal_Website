@@ -120,7 +120,8 @@ span {
   padding: 5px;
 }
 #anchor_My_Name_Header {
-  /* visibility: hidden; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 #Anchor-Reference {
   color: rgb(178, 191, 116);
@@ -239,7 +240,6 @@ span {
 }
 #My_Name_Header {
   color: white;
-  /* visibility: hidden; */
 }
 #Nav ul {
   text-align: center;
