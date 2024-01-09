@@ -12,16 +12,20 @@
 // }
 
 //Show header name anchor when exceeding scrollPoint
-window.addEventListener("scroll", function () {
-  let scrollPoint = document.getElementById("My_Name");
-  let anchor_My_Name_Header = document.getElementById("anchor_My_Name_Header");
-  if (window.scrollY > scrollPoint.offsetHeight + scrollPoint.offsetTop) {
-    anchor_My_Name_Header.style.opacity = "1";
-  }
-  if (window.scrollY < scrollPoint.offsetHeight + scrollPoint.offsetTop) {
-    anchor_My_Name_Header.style.opacity = "0";
-  }
-});
+if (document.getElementById("My_Name")) {
+  window.addEventListener("scroll", function () {
+    let scrollPoint = document.getElementById("My_Name");
+    let anchor_My_Name_Header = document.getElementById(
+      "anchor_My_Name_Header"
+    );
+    if (window.scrollY > scrollPoint.offsetHeight + scrollPoint.offsetTop) {
+      anchor_My_Name_Header.style.opacity = "1";
+    }
+    if (window.scrollY < scrollPoint.offsetHeight + scrollPoint.offsetTop) {
+      anchor_My_Name_Header.style.opacity = "0";
+    }
+  });
+}
 
 //Adds a top spacing to anchor jumps
 $("#btn_About_Me").click(function () {
@@ -32,13 +36,21 @@ $("#btn_About_Me").click(function () {
   });
 });
 
-//Slideshow
+// Slideshow
 var slideIndex = 0;
-carousel();
 
+if (typeof carousel === "function" && typeof document !== "undefined") {
+  carousel();
+}
 function carousel() {
+  if (typeof document === "undefined") {
+    return;
+  }
   var i;
   var x = document.getElementsByClassName("mySlides");
+  if (typeof x === "undefined" || x.length === 0) {
+    return;
+  }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
