@@ -9,13 +9,13 @@ class NavPrimaryComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <ul>
-          <li><a href="#Home_Container" >Home</a></li>
-          <li><a href="#About_Container" >About</a></li>
-          <li><a href="#Games_Container" >Games</a></li>
-          <li><a href="#Projects_Container" >Projects</a></li>
-          <li><a href="#Music_Container" >Music</a></li>
-          <li><a href="#Other_Container" >Other</a></li>
-          <li><a href="#Contact_Container" >Contact</a></li>
+          <li><a href="#Home_Container" class="nav-link">Home</a></li>
+          <li><a href="#About_Container" class="nav-link">About</a></li>
+          <li><a href="#Games_Container" class="nav-link">Games</a></li>
+          <li><a href="#Projects_Container" class="nav-link">Projects</a></li>
+          <li><a href="#Music_Container" class="nav-link">Music</a></li>
+          <li><a href="#Other_Container" class="nav-link">Other</a></li>
+          <li><a href="#Contact_Container" class="nav-link">Contact</a></li>
           <li>
               <div id="Nav_Social">
                 <a href="https://www.linkedin.com/in/chad-a-linthicum/" target="_blank"
