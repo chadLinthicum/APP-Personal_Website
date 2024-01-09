@@ -28,3 +28,12 @@ function carousel() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 3500);
 }
+
+//Adds a top spacing to anchor jumps
+$("#btn_About_Me").click(function () {
+  let headerHeight = document.getElementById("Header").offsetHeight;
+  var divId = $(this).attr("href");
+  $("html, body").animate({
+    scrollTop: $(divId).offset().top - headerHeight,
+  });
+});

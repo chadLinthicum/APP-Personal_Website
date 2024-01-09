@@ -58,10 +58,13 @@ customElements.define("x-nav-secondary", NavSecondaryComponent);
 
 let hamburger = document.getElementById("Hamburger");
 let nav = document.getElementById("Nav");
+let nav_social_header = document.getElementById("Nav_Social_Header");
 
 function toggleNav() {
   nav.classList.toggle("popout-hide");
   nav.classList.toggle("popout-show");
+  nav_social_header.classList.toggle("popout-hide");
+
   if (hamburger.src.includes("burger-off.webp")) {
     hamburger.src = "../../assets/burger-on.webp";
   } else {
@@ -79,7 +82,9 @@ document.querySelectorAll('a[href^="#"').forEach((anchor) => {
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
-    toggleNav();
+    if (anchor.id !== "btn_About_Me" && anchor.id !== "anchor_My_Name_Header") {
+      toggleNav();
+    }
   });
 });
 
