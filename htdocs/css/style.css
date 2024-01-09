@@ -119,6 +119,9 @@ span {
   object-fit: fill;
   padding: 5px;
 }
+#anchor_My_Name_Header {
+  visibility: hidden;
+}
 #Anchor-Reference {
   color: rgb(178, 191, 116);
 }

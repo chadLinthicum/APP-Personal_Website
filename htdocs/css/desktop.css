@@ -36,6 +36,7 @@ li {
   filter: invert(20%);
   transition: filter 0.25s ease;
 }
+
 #Content {
   max-width: 50vw;
 }

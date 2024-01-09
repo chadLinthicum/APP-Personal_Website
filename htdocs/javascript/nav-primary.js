@@ -77,7 +77,7 @@ document.querySelectorAll('a[href^="#"').forEach((anchor) => {
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
-    if (anchor.id !== "btn_About_Me") {
+    if (anchor.id !== "btn_About_Me" && anchor.id !== "anchor_My_Name_Header") {
       toggleNav();
     }
   });

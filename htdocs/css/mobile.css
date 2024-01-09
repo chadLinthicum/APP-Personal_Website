@@ -56,6 +56,9 @@ a {
   height: 20px;
   margin: 2px;
 }
+#anchor_My_Name_Header {
+  margin-top: 20px;
+}
 #btn_About_Me {
   padding-top: 20px;
 }
