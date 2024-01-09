@@ -64,9 +64,6 @@ iframe {
 p {
   font-size: 1.15rem;
   text-wrap: pretty;
-  text-align: justify;
-  text-justify: inter-word;
-  overflow-wrap: break-word;
 }
 span {
   text-wrap: balance;
