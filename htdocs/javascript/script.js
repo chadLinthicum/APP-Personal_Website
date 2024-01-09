@@ -11,12 +11,25 @@
 //   // console.log(headerHeight)
 // }
 
+//Show header name anchor when exceeding scrollPoint
 window.addEventListener("scroll", function () {
-  let element = document.getElementById("My_Name");
+  let scrollPoint = document.getElementById("My_Name");
   let anchor_My_Name_Header = document.getElementById("anchor_My_Name_Header");
-  if (window.scrollY > element.offsetHeight + element.offsetTop) {
+  if (window.scrollY > scrollPoint.offsetHeight + scrollPoint.offsetTop) {
     anchor_My_Name_Header.style.opacity = "1";
   }
+  if (window.scrollY < scrollPoint.offsetHeight + scrollPoint.offsetTop) {
+    anchor_My_Name_Header.style.opacity = "0";
+  }
+});
+
+//Adds a top spacing to anchor jumps
+$("#btn_About_Me").click(function () {
+  let headerHeight = document.getElementById("Header").offsetHeight;
+  var divId = $(this).attr("href");
+  $("html, body").animate({
+    scrollTop: $(divId).offset().top - headerHeight,
+  });
 });
 
 //Slideshow
@@ -36,12 +49,3 @@ function carousel() {
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 3500);
 }
-
-//Adds a top spacing to anchor jumps
-$("#btn_About_Me").click(function () {
-  let headerHeight = document.getElementById("Header").offsetHeight;
-  var divId = $(this).attr("href");
-  $("html, body").animate({
-    scrollTop: $(divId).offset().top - headerHeight,
-  });
-});
