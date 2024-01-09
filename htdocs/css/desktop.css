@@ -50,7 +50,7 @@ li {
 }
 #Home_Container {
   top: 100px;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 140px);
 }
 #Home_Container p {
   font-size: 2rem;
@@ -83,7 +83,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 0 0 0;
+  padding: 0;
 }
 #Nav ul {
   font-size: 1.65em;
@@ -109,5 +109,5 @@ li {
   display: none;
 }
 #particles-js {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 140px);
 }

@@ -10,6 +10,7 @@ class NavPrimaryComponent extends HTMLElement {
     this.innerHTML = `
             <ul>
           <li><a href="#Home_Container" >Home</a></li>
+          <li><a href="#About_Container" >About</a></li>
           <li><a href="#Games_Container" >Games</a></li>
           <li><a href="#Projects_Container" >Projects</a></li>
           <li><a href="#Music_Container" >Music</a></li>
@@ -76,7 +77,9 @@ document.querySelectorAll('a[href^="#"').forEach((anchor) => {
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
-    toggleNav();
+    if (anchor.id !== "btn_About_Me") {
+      toggleNav();
+    }
   });
 });
 

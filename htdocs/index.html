@@ -33,12 +33,11 @@
         alt="="
       />
 
-      <span
-        id="My_Name_Header"
-        onclick="window.location.href = '#Home_Container'"
+      <a href="#Home_Container" id="btn_About_Me">
+        <span id="My_Name_Header">
+          chad<span id="Last_Name">Linthicum</span>
+        </span></a
       >
-        chad<span id="Last_Name">Linthicum</span>
-      </span>
 
       <x-nav-primary id="Nav" class="popout-hide"></x-nav-primary>
 
@@ -63,6 +62,7 @@
         /></a>
       </div>
     </header>
+
     <div id="Main">
       <div id="particles-js">
         <section id="Home_Container">
@@ -71,7 +71,14 @@
             chad<span id="Last_Name">Linthicum</span>
           </h1>
           <span id="Job_Title">Game Developer</span>
-          <!-- <div>
+          <a href="#About_Container"><button>About Me</button></a>
+        </section>
+      </div>
+
+      <section id="About_Container">
+        <div id="Content">
+          <h2>About Chad</h2>
+          <div>
             <img id="My_Face" src="./assets/profPic_2.webp" alt="My_Face" />
           </div>
           <div>
@@ -88,9 +95,9 @@
               will discover a captivating array of projects that showcase my
               versatility and artistic vision.
             </p>
-          </div> -->
-        </section>
-      </div>
+          </div>
+        </div>
+      </section>
 
       <section id="Games_Container">
         <div id="Content">
@@ -203,6 +210,20 @@
                   alt="Pizza Feed"
               /></a>
             </div>
+            <h3>Android</h3>
+            <div class="category-group">
+              <a
+                target="_blank"
+                class="card"
+                href="https://github.com/chadLinthicum/GAME-Cosmic_Bingo"
+              >
+                <p>Cosmic BINGO!</p>
+                <img
+                  class="card-image"
+                  src="./assets/cosmicBingo_icon.webp"
+                  alt="Cosmic Bingo"
+              /></a>
+            </div>
             <h3>NES</h3>
             <div class="category-group">
               <a target="_blank" class="card" href="swamp_donkey/SD_index.html">
@@ -214,7 +235,6 @@
                 <img class="card-image" src="./assets/LF_Cart.webp" alt="LF"
               /></a>
             </div>
-
             <h3>Web</h3>
             <div class="category-group">
               <a
@@ -243,21 +263,6 @@
               >
                 <p>PONG</p>
                 <img class="card-image" src="./assets/pong.webp" alt="PONG"
-              /></a>
-            </div>
-
-            <h3>Android</h3>
-            <div class="category-group">
-              <a
-                target="_blank"
-                class="card"
-                href="https://github.com/chadLinthicum/GAME-Cosmic_Bingo"
-              >
-                <p>Cosmic BINGO!</p>
-                <img
-                  class="card-image"
-                  src="./assets/cosmicBingo_icon.webp"
-                  alt="Cosmic Bingo"
               /></a>
             </div>
           </div>
@@ -440,9 +445,7 @@
               rows="10"
               required
             ></textarea>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">
-              Send!
-            </button>
+            <button type="submit">Send!</button>
             <p>
               I can also be reached at:<br /><strong
                 >chad.a.linthicum@gmail.com</strong
