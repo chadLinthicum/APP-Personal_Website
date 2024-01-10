@@ -1,5 +1,3 @@
-"use strict";
-
 // Define the custom element class
 class NavPrimaryComponent extends HTMLElement {
   constructor() {

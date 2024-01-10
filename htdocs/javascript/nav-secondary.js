@@ -9,6 +9,9 @@ class NavSecondaryComponent extends HTMLElement {
             <ul>
               <li><a href="../../index.html" class="nav-link">Home</a></li>
               <li>
+                <a href="../../index.html#About_Container" class="nav-link">About</a>
+              </li>
+              <li>
                 <a href="../../index.html#Games_Container" class="nav-link">Games</a>
               </li>
               <li>

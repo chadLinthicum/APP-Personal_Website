@@ -118,7 +118,7 @@ span {
   object-fit: fill;
   padding: 5px;
 }
-#anchor_My_Name_Header {
+#anchor_My_Name_Header_Home {
   opacity: 0;
   transition: opacity 0.5s ease-in;
 }

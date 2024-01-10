@@ -15,14 +15,14 @@
 if (document.getElementById("My_Name")) {
   window.addEventListener("scroll", function () {
     let scrollPoint = document.getElementById("My_Name");
-    let anchor_My_Name_Header = document.getElementById(
-      "anchor_My_Name_Header"
+    let anchor_My_Name_Header_Home = document.getElementById(
+      "anchor_My_Name_Header_Home"
     );
     if (window.scrollY > scrollPoint.offsetHeight + scrollPoint.offsetTop) {
-      anchor_My_Name_Header.style.opacity = "1";
+      anchor_My_Name_Header_Home.style.opacity = "1";
     }
     if (window.scrollY < scrollPoint.offsetHeight + scrollPoint.offsetTop) {
-      anchor_My_Name_Header.style.opacity = "0";
+      anchor_My_Name_Header_Home.style.opacity = "0";
     }
   });
 }
