@@ -14,6 +14,15 @@ li {
   border-radius: 25%;
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   margin: 2.5%;
+  transition: transform 0.3s ease-in, border 0.3s ease-in;
+}
+.card:hover {
+  transform: scale(1.1);
+  border: 5px solid #d36c47;
+}
+.card p,
+.card-image {
+  transition: transform 0.3s ease-in;
 }
 .card p {
   font-size: 0.9rem;
@@ -36,7 +45,6 @@ li {
   filter: invert(20%);
   transition: filter 0.25s ease;
 }
-
 #Content {
   max-width: 50vw;
 }
