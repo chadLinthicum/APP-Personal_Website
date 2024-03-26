@@ -10,7 +10,7 @@ class NavPrimaryComponent extends HTMLElement {
           <li><a href="#Home_Container" class="nav-link">Home</a></li>
           <li><a href="#About_Container" class="nav-link">About</a></li>
           <li><a href="#Games_Container" class="nav-link">Games</a></li>
-          <li><a href="#Projects_Container" class="nav-link">Projects</a></li>
+          <li><a href="#Apps_Container" class="nav-link">Apps</a></li>
           <li><a href="#Music_Container" class="nav-link">Music</a></li>
           <li><a href="#Other_Container" class="nav-link">Other</a></li>
           <li><a href="#Contact_Container" class="nav-link">Contact</a></li>

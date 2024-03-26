@@ -1,5 +1,5 @@
 Layout: 
-    Projects: 
+    Apps: 
         Web Apps (Pokedex, Grill Cheese Channel, Lunar Clock, React Native Ninja Turtles)
         Link to more
     Games:

@@ -191,7 +191,7 @@ span {
 #Games_Container,
 #Music_Container,
 #Other_Container,
-#Projects_Container,
+#Apps_Container,
 #Contact_Container {
   display: flex;
   flex-direction: column;

@@ -15,7 +15,7 @@ class NavSecondaryComponent extends HTMLElement {
                 <a href="../../index.html#Games_Container" class="nav-link">Games</a>
               </li>
               <li>
-                <a href="../../index.html#Projects_Container" class="nav-link">Projects</a>
+                <a href="../../index.html#Apps_Container" class="nav-link">Apps</a>
               </li>
               <li>
                 <a href="../../index.html#Music_Container" class="nav-link">Music</a>
