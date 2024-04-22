@@ -1,3 +1,10 @@
+#FORCE HTTPS
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # DISABLE CACHING
 <IfModule mod_headers.c>
     Header set Cache-Control "no-cache, no-store, must-revalidate"
