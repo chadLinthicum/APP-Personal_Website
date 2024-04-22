@@ -17,6 +17,7 @@
 }
 a {
   text-decoration: none;
+  color: white;
 }
 address {
   margin: auto;
@@ -58,8 +59,9 @@ h6 {
 }
 iframe {
   border: 3px solid black;
-  width: 1000px;
-  height: 640px;
+  border-radius: 10px;
+  width: 95%;
+  height: 700px;
 }
 p {
   font-size: 1.15rem;

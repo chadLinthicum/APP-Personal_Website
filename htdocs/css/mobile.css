@@ -1,6 +1,3 @@
-a {
-  color: #373737;
-}
 .card {
   display: inline-block;
   width: 150px;
@@ -21,6 +18,9 @@ a {
 .card-image {
   width: 5.5rem;
   height: 5.5rem;
+}
+.nav-link {
+  color: #373737;
 }
 .popout-hide {
   top: 0;

@@ -46,7 +46,7 @@ li {
   transition: filter 0.25s ease;
 }
 #Content {
-  max-width: 50vw;
+  max-width: 75vw;
 }
 #Header {
   height: 100px;
