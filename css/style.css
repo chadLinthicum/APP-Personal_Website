@@ -78,7 +78,8 @@ span {
 
   margin: auto;
 }
-.card {
+.card,
+.card-alt1 {
   display: inline-block;
   border: 5px solid var(--main-color-border);
   background-color: var(--main-color-card);
@@ -90,15 +91,38 @@ span {
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   margin: 0px 15px 30px 15px;
 }
-.card p {
+.card p,
+.card-alt1 p {
   margin: 10px;
   color: var(--main-color-text);
   font-weight: bold;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 5px;
 }
-.card-image {
+.card-image,
+.card-alt1-image {
   border: 2.5px solid black;
   border-radius: 25%;
+  width: 5.5rem;
+  height: 5.5rem;
 }
+.card-alt1 {
+  width: 275px;
+  height: 275px;
+}
+.card-alt1-image {
+  width: 12.5rem;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.card-alt1 p {
+  font-size: 1.25rem;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -238,8 +262,6 @@ span {
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   border: 7.5px solid transparent;
   object-fit: cover;
-  position: relative; /* Allow positioning of the image */
-  top: 100%; /* Adjust this value to move the image down */
 }
 #My_Name {
   color: #fff;

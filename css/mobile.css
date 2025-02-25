@@ -1,13 +1,5 @@
-.card p {
-  font-size: 0.9rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-top: 5px;
-}
-.card-image {
-  width: 5.5rem;
-  height: 5.5rem;
+.desktop-only {
+  display: none;
 }
 .nav-link {
   color: #373737;
@@ -36,9 +28,6 @@
   width: 80vw;
   height: 100vh;
   transition-duration: 550ms;
-}
-.desktop-only {
-  display: none;
 }
 .nav_social_icons_header {
   filter: invert(1);

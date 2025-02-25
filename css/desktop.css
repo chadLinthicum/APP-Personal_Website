@@ -1,3 +1,7 @@
+.mobile-only {
+  display: none;
+}
+
 a {
   color: var(--main-bg-color);
 }
@@ -5,30 +9,20 @@ li {
   display: inline-block;
   list-style-type: none;
 }
-.card {
+.card,
+.card-alt1 {
   transition: transform 0.3s ease-in, border 0.3s ease-in;
 }
-.card:hover {
+.card:hover,
+.card-alt1:hover {
   transform: scale(1.1);
   border: 5px solid #d36c47;
 }
 .card p,
-.card-image {
+.card-alt1 p,
+.card-image,
+.card-alt1-image {
   transition: transform 0.3s ease-in;
-}
-.card p {
-  font-size: 0.9rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-top: 5px;
-}
-.card-image {
-  width: 5.5rem;
-  height: 5.5rem;
-}
-.mobile-only {
-  display: none;
 }
 .nav_social_icons {
   filter: invert(1);
