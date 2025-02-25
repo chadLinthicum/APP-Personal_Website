@@ -79,8 +79,16 @@ span {
   margin: auto;
 }
 .card {
+  display: inline-block;
   border: 5px solid var(--main-color-border);
   background-color: var(--main-color-card);
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
+  margin: 0px 15px 30px 15px;
 }
 .card p {
   margin: 10px;
@@ -223,11 +231,15 @@ span {
   }
 }
 #My_Face {
+  /* filter: grayscale(1); */
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.5) 0 1px 25px 10px;
   border: 7.5px solid transparent;
+  object-fit: cover;
+  position: relative; /* Allow positioning of the image */
+  top: 100%; /* Adjust this value to move the image down */
 }
 #My_Name {
   color: #fff;
@@ -247,7 +259,7 @@ span {
 }
 #Games_Container,
 #Music_Container,
-#Contact_Container {
+#About_Container {
   background-color: var(--main-color-bg2);
 }
 #particles-js {
