@@ -257,9 +257,9 @@ span {
   display: flex;
   align-items: center;
 }
-#Games_Container,
-#Music_Container,
-#About_Container {
+#Apps_Container,
+#Other_Container,
+#Contact_Container {
   background-color: var(--main-color-bg2);
 }
 #particles-js {
