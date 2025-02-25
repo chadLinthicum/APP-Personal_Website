@@ -109,20 +109,59 @@ span {
   width: 5.5rem;
   height: 5.5rem;
 }
+.card-alt1 p {
+  color: #0a1111;
+}
 .card-alt1 {
-  width: 275px;
-  height: 275px;
+  width: 250px;
+  height: 250px;
+  border: 5px solid black;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.card-alt1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    #7ca275,
+    #7ca275,
+    #000000,
+    #7ca275,
+    #7ca275
+  );
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: 0; /* Keep the gradient behind */
 }
 .card-alt1-image {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 10.5rem;
+  height: 10.5rem;
   object-fit: cover;
+  position: relative; /* Position relative to allow z-index */
+  z-index: 1; /* Bring the image above the gradient */
 }
-
 .card-alt1 p {
   font-size: 1.25rem;
+  position: relative; /* Position relative to allow z-index */
+  z-index: 1; /* Bring the text above the gradient */
 }
-
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -141,6 +180,7 @@ span {
 .form-group button {
   background-color: var(--main-color-button);
   width: 80px;
+  color: black !important;
 }
 .hidden {
   display: none;
